@@ -73,9 +73,11 @@ The key business questions were answered by writing some structured query langua
    
     ![2b ansa](https://github.com/user-attachments/assets/48c86a70-cfc9-4962-a969-0410c8ab5b21)
 
+     **The Top/Bottom 3 Regions** in terms of sales re shown in the queries results shown above.
+   
    - The sales was sum up by region, then ordered *appropriately* to select the top 3 and bottom 3.
    
-3. What were the total sales of appliances in Ontario? 
+4. What were the total sales of appliances in Ontario? 
 
     **The Total Sales of Appliances in Ontario is found by writing the query below:**
 
@@ -89,7 +91,7 @@ The key business questions were answered by writing some structured query langua
 
    - Filter by product_category = 'Appliances' and province = 'Ontario' then sum sales.
 
-4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
+5. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
 
    **Revenue Growth for Bottom 10 Customers** query was written as shown below:
 
@@ -113,7 +115,7 @@ The key business questions were answered by writing some structured query langua
 
    - The bottom 10 customers by total sales was identified, the advice above were given based on the output of the query.
      
-5. KMS incurred the most shipping cost using which shipping method?
+6. KMS incurred the most shipping cost using which shipping method?
 
     **The Hishest Shipping Cost Method** is found by using the SQL:
 
@@ -130,12 +132,23 @@ The key business questions were answered by writing some structured query langua
 
 6. Who are the most valuable customers, and what products or services do they typically purchase? 
 
+   **The Most Valuable Customers & Preferences** was obtained by writing the below query:
 
+      ![6query](https://github.com/user-attachments/assets/c0fab9ad-412a-4427-8419-9cc5db8b8e53)
+
+    **Query Result**
+
+   ![6ansa](https://github.com/user-attachments/assets/3220fb02-99ad-4105-ad32-199e354640f7)
+
+  **The Most Valuable Customers & their Preferences** are shown in the query result above.
    - Most Valuable customers was defined by the total profit and the common product_categories they bought were also listed.
 
 7. Which small business customer had the highest sales? 
    - The Customer_segment was filtered as = 'small Business', then sum sales by customer_name and ordered by sales in descending order to get the top customer.
 
+Dennis Kane
+Small Business
+33367.85
 
 8. Which Corporate Customer placed the most number of orders in 2009 – 2012? 
    - The order_id was counted distinctly by customer_name for customer_segment = 'corporate' and the top 1 was gotten.
