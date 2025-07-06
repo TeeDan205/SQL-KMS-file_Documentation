@@ -57,7 +57,7 @@ The key business questions were answered by writing some structured query langua
    ![1 ansa REAL](https://github.com/user-attachments/assets/e8297778-060a-488f-baa4-f74c21dc4e01)
 
    **Key Insight:**
-   Technology products generated 42% more revenue than secon-place Furniture ($1.3M), indicating strong market demand for electronics.
+   Technology products generated 42% more revenue than second-place Furniture ($1.3M), indicating strong market demand for electronics.
    
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
      **The Top 3 Regions** were obtained by writing the query (ranked in descending order) as shown below:
@@ -201,7 +201,8 @@ The key business questions were answered by writing some structured query langua
 
 ### 💡 Strategic Recommendations and Conclusion
 
-  1. The Top Regions should continue to nurture these markets with excellent service, product availability and trgeted promotions to maintain and grow market share. Conduct market reseach to understand the unique challenges and opportunities of the bottom 3 regions.
+  1. The Top Regions should continue to nurture these markets with excellent service, product availability and targeted promotions to maintain and grow market share. Conduct market reseach to understand the unique challenges and opportunities of the bottom 3 regions.
+  2. Technology products generated more revenue than other product category indicated strong market demand for electronics.
 
 
 
