@@ -157,15 +157,15 @@ The key business questions were answered by writing some structured query langua
 
 8. Which Corporate Customer placed the most number of orders in 2009 – 2012? 
     - The order_id was counted distinctly by customer_name for customer_segment = 'corporate' and the top 1 was gotten. The query is written as shown below:
+ 
+      ![8query](https://github.com/user-attachments/assets/833fca68-8a02-47c1-b02f-9e4d859b5acc)
 
-     ![8query](https://github.com/user-attachments/assets/833fca68-8a02-47c1-b02f-9e4d859b5acc)
-
-     **Query Result:**
+      **Query Result:**
   
-     **Corporate Order Leader** is **Barry Weirich** with the highest number of orders in 2009 – 2012. he ordered  **50**
+      **Corporate Order Leader** is **Barry Weirich** with the highest number of orders in 2009 – 2012. he ordered  **50**
 
 9. Which consumer customer was the most profitable one? 
-    - The Customer_segment was filtered as = 'Consumer', then sum sales by customer_name and ordered by sales in descending order to get the top customer. The query is written as shown below:
+     - The Customer_segment was filtered as = 'Consumer', then sum sales by customer_name and ordered by sales in descending order to get the top customer. The query is written as shown below:
 
       ![9query](https://github.com/user-attachments/assets/6a63aa25-c771-4388-818f-df08eb975cbf)
 
@@ -176,7 +176,7 @@ The key business questions were answered by writing some structured query langua
 10. Which customer returned items, and what segment do they belong to? 
      - full outer join order_status (where returned status = 'Returned') with orders to get the customer_name and their segment s shown in the query written below:
 
-     ![10 to join](https://github.com/user-attachments/assets/39d0f54a-9ced-45cc-98b8-7dba0ceb4dcd)
+      ![10 to join](https://github.com/user-attachments/assets/39d0f54a-9ced-45cc-98b8-7dba0ceb4dcd)
 
   After the two tables were left-joined using order_id as the primary key, view of the new combined table was created and a query was written to get the customer who returned items the most.
 
