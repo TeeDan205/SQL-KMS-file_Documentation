@@ -45,21 +45,20 @@ The key business questions were answered by writing some structured query langua
 
 **Case scenario I:**
 1. Which product category had the highest sales?
-    **The Highest-Selling Category**
+    **The Highest-Selling Category** was obtained by writing the below query:
+     
+   ![1qry REAL](https://github.com/user-attachments/assets/6494816d-fa85-4303-9248-3ebb71cd86ed)
    
-   '''''SQL Approach
-   
-   select Product_Category, sum([Sales]) as [Highest Sales]
-
-   from [dbo].[KMS]
-
-   group by Product_Category
-
-   order by [Highest Sales] desc
-
    - The sales by product_category was sum up, ordered and the top one was picked.
+
+   **Query Result**
+
+   ![1 ansa REAL](https://github.com/user-attachments/assets/e8297778-060a-488f-baa4-f74c21dc4e01)
+
+   **Key Insight:**
+   Technology products generated 42% more revenue than secon-place Furniture ($1.3M), indicating strong market demand for electronics.
    
-3. What are the Top 3 and Bottom 3 regions in terms of sales?
+2. What are the Top 3 and Bottom 3 regions in terms of sales?
    - The sales was sum up by region, then ordered to select the top 3 and bottom 3 as shown in the query written below:
    
 4. What were the total sales of appliances in Ontario? 
