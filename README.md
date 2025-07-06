@@ -43,11 +43,7 @@ A schema; a logical container that organizes database objects (tables, views, et
 
 The key business questions were answered by writing some structured query language
 
-
-
-### 🔑 Key Findings & Insights:
-
-**Case scenariio I:**
+**Case scenario I:**
 1. Which product category had the highest sales?
    - The sales by product_category was sum up, ordered and the top one was picked.
    
@@ -84,6 +80,11 @@ The key business questions were answered by writing some structured query langua
 
 
 11. If the delivery truck is the most economical but the slowest shipping method and  Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer
+
+
+
+### 🔑 Key Findings & Insights:
+
 
 
 ### 💡 Strategic Recommendations and Conclusion
