@@ -33,11 +33,10 @@ In the initial phase of the data cleaning and preparation, the following actions
    - 🔃 Data Import: The two .csv data were imported by right-click on the database, then  task and navigate to import flat file.
      
    - 🧹 **Data Type formatting:** The data Type for each of the 21 attributes were ensured they are the correct data type. The order_id was changed to VarChar and made the primary key, order_date in DATE format, sales, shipping_cost, discount, unit_price and profit in decimal (10,2) data Type. The order_id consistency between datasets was also ensured.
+     
+   - SQL schema and Setup
 
-### SQL schema and Setup
-
-A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schrms db0 (Database Owner) was used [dbo].[KMS] was used
-
+A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schrms dbO (Database Owner) was used [dbo].[KMS] was used.
 
 
 ### 💹 SQL Analysis
