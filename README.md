@@ -45,17 +45,24 @@ The key business questions were answered by writing some structured query langua
 
 **Case scenario I:**
 1. Which product category had the highest sales?
+    **The Highest-Selling Category**
+   '''''SQL Approach
+   select Product_Category, sum([Sales]) as [Highest Sales]
+from [dbo].[KMS]
+group by Product_Category
+order by [Highest Sales] desc
+
    - The sales by product_category was sum up, ordered and the top one was picked.
    
-2. What are the Top 3 and Bottom 3 regions in terms of sales?
+3. What are the Top 3 and Bottom 3 regions in terms of sales?
    - The sales was sum up by region, then ordered to select the top 3 and bottom 3 as shown in the query written below:
    
-3. What were the total sales of appliances in Ontario? 
+4. What were the total sales of appliances in Ontario? 
    - Filter by product_category = 'Appliances' and province = 'Ontario' then sum sales.
-4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
+5. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
    - The bottom 10 customers by total sales was identified, the advice were given based on the output of the query.
      
-5. KMS incurred the most shipping cost using which shipping method?
+6. KMS incurred the most shipping cost using which shipping method?
    - The shipping_cost was sum up by ship_mode and the top 1 was filtered.
 
 **Case Scenario II:**
