@@ -30,13 +30,11 @@ This Data analysis project aims to analyze the Kultra Mega Stores order data fro
 In the initial phase of the data cleaning and preparation, the following actions were performed;
    - ⏳ **Data Acquisition and inspection:** The data was loaded and the total number of records and fields were confirmed to be the same from the source.
      
-   - 🔃 Data Import: The two .csv data were imported by right-click on the database, then  task and navigate to import flat file.
+   - 🔃 **Data Import:** The two .csv data were imported by right-click on the database, then  task and navigate to import flat file.
      
    - 🧹 **Data Type formatting:** The data Type for each of the 21 attributes were ensured they are the correct data type. The order_id was changed to VarChar and made the primary key, order_date in DATE format, sales, shipping_cost, discount, unit_price and profit in decimal (10,2) data Type. The order_id consistency between datasets was also ensured.
      
-   - SQL schema and Setup
-
-A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schrms dbO (Database Owner) was used [dbo].[KMS] was used.
+   - 🛠️ **SQL schema and Setup:** A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schrms dbO (Database Owner) was used [dbo].[KMS] was used.
 
 
 ### 💹 SQL Analysis
@@ -59,10 +57,30 @@ The key business questions were answered by writing some structured query langua
    Technology products generated 42% more revenue than secon-place Furniture ($1.3M), indicating strong market demand for electronics.
    
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
+     **The Top 3 Regions** were obtained by writing the query as shown below:
+
+    ![2qry](https://github.com/user-attachments/assets/6ad326f9-bc17-47cd-bdde-e4b07b49e146)
+
+    **Query Result**
+
+    ![2a Ansa](https://github.com/user-attachments/assets/8cfe621f-4dc0-4c48-aaa4-bbd9fb1c06da)
+
+      **The Top 3 Regions** were obtained by writing the query as shown below:
+
+    ![2b qry](https://github.com/user-attachments/assets/a5739c21-c4c5-4f76-a971-926f4a0291c6)
+
+    **Query Result**
+   
+    ![2b ansa](https://github.com/user-attachments/assets/48c86a70-cfc9-4962-a969-0410c8ab5b21)
+
    - The sales was sum up by region, then ordered to select the top 3 and bottom 3 as shown in the query written below:
    
+
+
 4. What were the total sales of appliances in Ontario? 
    - Filter by product_category = 'Appliances' and province = 'Ontario' then sum sales.
+
+
 5. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
    - The bottom 10 customers by total sales was identified, the advice were given based on the output of the query.
      
