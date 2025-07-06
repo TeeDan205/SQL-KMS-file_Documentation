@@ -50,9 +50,12 @@ The key business questions were answered by writing some structured query langua
    '''''SQL Approach
    
    select Product_Category, sum([Sales]) as [Highest Sales]
-      from [dbo].[KMS]
-      group by Product_Category
-      order by [Highest Sales] desc
+
+   from [dbo].[KMS]
+
+   group by Product_Category
+
+   order by [Highest Sales] desc
 
    - The sales by product_category was sum up, ordered and the top one was picked.
    
