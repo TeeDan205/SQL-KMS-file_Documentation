@@ -12,17 +12,20 @@ This Data analysis project aims to analyze the Kultra Mega Stores order data fro
 
 ### ✍️ Dataset Description
 
-- **Source**: The data was provided by the incubator hub for the purpose of the hackathon and final Examinations of my data analysis program by the organization. The dataset contains two .csv files information scraped from 2009 to 2012, including: 
+- **Source**: The data was provided by the incubator hub for the purpose of the hackathon and final Examinations of my data analysis program by the organization. The dataset contains two .csv files information scraped from 2009 to 2012, including:
+  
    - **KMS orders Table:** Containes 8,400 records of orders with 21 ttributes including 
      - Order details: Order_ID, Order dates, price and quantities 
      - Customer information: Names, Province, segment and Region
      - Product details: category, sub-category, name, container, base margin, etc.
      - Financial metrics.
+       
    - **Order_Status Table:** Contains 573 records of returned orders. Each record has an order_id and the status 'returned'. Orders not present in this table are considered not returned. 
 
  ### 🧰 Tools Used
  
    1. Microsoft Structured Query Language (SQL) Server Management Studio (For database management and query execution)
+      
    2. Github Markdown for documentation in the repository.
 
 ### 🧑‍🔬 Methodology 
@@ -121,7 +124,7 @@ The key business questions were answered by writing some structured query langua
 
       ![5qry](https://github.com/user-attachments/assets/9364bbf4-8c0d-4b44-9dea-2f1d27dc5bff)
 
-    **Query Result**
+    **Query Result:**
 
       ![5nsa](https://github.com/user-attachments/assets/8188903f-fb8c-4af7-8dd5-f293c1eeb659)
 
@@ -132,65 +135,66 @@ The key business questions were answered by writing some structured query langua
 
 6. Who are the most valuable customers, and what products or services do they typically purchase? 
 
-   **The Most Valuable Customers & Preferences** was obtained by writing the below query:
+    **The Most Valuable Customers & Preferences** was obtained by writing the below query:
 
       ![6query](https://github.com/user-attachments/assets/c0fab9ad-412a-4427-8419-9cc5db8b8e53)
 
-    **Query Result**
+    **Query Result:**
 
-   ![6ansa](https://github.com/user-attachments/assets/3220fb02-99ad-4105-ad32-199e354640f7)
+     ![6ansa](https://github.com/user-attachments/assets/3220fb02-99ad-4105-ad32-199e354640f7)
 
-  **The Most Valuable Customers & their Preferences** are shown in the query result above.
-   - Most Valuable customers was defined by the total profit and the common product_categories they bought were also listed.
+     **The Most Valuable Customers & their Preferences** are shown in the query result above.
+       - Most Valuable customers was defined by the total profit and the common product_categories they bought were also listed.
 
 7. Which small business customer had the highest sales? 
-   - The Customer_segment was filtered as = 'small Business', then sum sales by customer_name and ordered by sales in descending order to get the top customer. The query is written as shown below:
+    - The Customer_segment was filtered as = 'small Business', then sum sales by customer_name and ordered by sales in descending order to get the top customer. The query is written as shown below:
 
-   ![7qury](https://github.com/user-attachments/assets/90d76144-94e1-4b00-ac24-5ca4b0a3f403)
+     ![7qury](https://github.com/user-attachments/assets/90d76144-94e1-4b00-ac24-5ca4b0a3f403)
 
-  **Query Result**
+     **Query Result:**
   
-  **Top small Business Customer** is **Dennis Kane** with the highest sales of **$33367.85**
+     **Top small Business Customer** is **Dennis Kane** with the highest sales of **$33367.85**
 
 8. Which Corporate Customer placed the most number of orders in 2009 – 2012? 
-   - The order_id was counted distinctly by customer_name for customer_segment = 'corporate' and the top 1 was gotten. The query is written as shown below:
+    - The order_id was counted distinctly by customer_name for customer_segment = 'corporate' and the top 1 was gotten. The query is written as shown below:
 
-    ![8query](https://github.com/user-attachments/assets/833fca68-8a02-47c1-b02f-9e4d859b5acc)
+     ![8query](https://github.com/user-attachments/assets/833fca68-8a02-47c1-b02f-9e4d859b5acc)
 
-  **Query Result**
+     **Query Result:**
   
-  **Corporate Order Leader** is **Barry Weirich** with the highest number of orders in 2009 – 2012. he ordered  **50**
+     **Corporate Order Leader** is **Barry Weirich** with the highest number of orders in 2009 – 2012. he ordered  **50**
 
 9. Which consumer customer was the most profitable one? 
-   - The Customer_segment was filtered as = 'Consumer', then sum sales by customer_name and ordered by sales in descending order to get the top customer. The query is written as shown below:
+    - The Customer_segment was filtered as = 'Consumer', then sum sales by customer_name and ordered by sales in descending order to get the top customer. The query is written as shown below:
 
-    ![9query](https://github.com/user-attachments/assets/6a63aa25-c771-4388-818f-df08eb975cbf)
+      ![9query](https://github.com/user-attachments/assets/6a63aa25-c771-4388-818f-df08eb975cbf)
 
-  **Query Result**
+      **Query Result:**
   
-  **Most Profitable Consumer** is **Emily Phan** with a profit of **$27220.69**
+      **Most Profitable Consumer** is **Emily Phan** with a profit of **$27220.69**
 
 10. Which customer returned items, and what segment do they belong to? 
-    - full outer join order_status (where returned status = 'Returned') with orders to get the customer_name and their segment s shown in the query written below:
+     - full outer join order_status (where returned status = 'Returned') with orders to get the customer_name and their segment s shown in the query written below:
 
-    ![10 to join](https://github.com/user-attachments/assets/39d0f54a-9ced-45cc-98b8-7dba0ceb4dcd)
- After the two tables were left-joined using order_id as the primary key, view of the new combined table was created and a query was written to get the customer who returned items the most.
+     ![10 to join](https://github.com/user-attachments/assets/39d0f54a-9ced-45cc-98b8-7dba0ceb4dcd)
 
-    ![10 to ansa](https://github.com/user-attachments/assets/c3304f85-54e1-4fb2-acff-932e49a31459)
+  After the two tables were left-joined using order_id as the primary key, view of the new combined table was created and a query was written to get the customer who returned items the most.
 
- **Query Result**
+   ![10 to ansa](https://github.com/user-attachments/assets/c3304f85-54e1-4fb2-acff-932e49a31459)
+
+   **Query Result:**
   
-  **Returning Customers & Segments** is **Patrick Jones** in the **Home Office** Customer Segemnt with  total **30** returned items.
+   **Returning Customers & Segments** is **Patrick Jones** in the **Home Office** Customer Segemnt with  total **30** returned items.
 
 11. If the delivery truck is the most economical but the slowest shipping method and  Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer
 
-**The shipping Cost Efficiency** is obtained by using the query below:
+    **The shipping Cost Efficiency** is obtained by using the query below:
 
-   ![11qry](https://github.com/user-attachments/assets/2f184629-7d81-4fbc-9bbe-7651846ef143)
+    ![11qry](https://github.com/user-attachments/assets/2f184629-7d81-4fbc-9bbe-7651846ef143)
 
- **Query Result**
+    **Query Result:**
  
-The company appropriately spent shipping costs based on the order priority because majority of the ship mode matched the order priority. Delivery truck was used for low and medium order priority products while the Express Air ship mode was used for high and critical order priority.
+     The company appropriately spent shipping costs based on the order priority because majority of the ship mode matched the order priority. Delivery truck was used for low and medium order priority products while the Express Air ship mode was used for high and critical order priority.
 
 
 ### 🔑 Key Findings & Insights:
