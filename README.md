@@ -76,6 +76,7 @@ The key business questions were answered by writing some structured query langua
    - The sales was sum up by region, then ordered *appropriately* to select the top 3 and bottom 3.
    
 3. What were the total sales of appliances in Ontario? 
+
     **The Total Sales of Appliances in Ontario is found by writing the query below:**
 
     ![3 qry](https://github.com/user-attachments/assets/a13314ef-550e-4bcf-8e83-0343d1036d38)
@@ -89,6 +90,7 @@ The key business questions were answered by writing some structured query langua
    - Filter by product_category = 'Appliances' and province = 'Ontario' then sum sales.
 
 4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
+
    **Revenue Growth for Bottom 10 Customers** query was written as shown below:
 
     ![4](https://github.com/user-attachments/assets/894f0c4b-5394-4482-8a69-df2464ae7df6)
@@ -100,14 +102,18 @@ The key business questions were answered by writing some structured query langua
      Having identified the bottom 10 customers in terms of sales, region and  their prefrences;
 
    (i) Create a branch closer to Alberta Province and those far away region from the Kuga Mega Store location.
+
    (ii) Reduce discounts for chronic low-margin customers
+
    (iii) Increase the shipping cost for low order quantities
+
    (iv) Enforce shipping minimums or add surcharges for small orders.
+
    (v) Understand the reason for returning some orders and tackle it immediately.
 
    - The bottom 10 customers by total sales was identified, the advice above were given based on the output of the query.
      
-6. KMS incurred the most shipping cost using which shipping method?
+5. KMS incurred the most shipping cost using which shipping method?
    - The shipping_cost was sum up by ship_mode and the top 1 was filtered.
 
 **Case Scenario II:**
