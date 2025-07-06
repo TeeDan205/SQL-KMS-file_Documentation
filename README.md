@@ -182,7 +182,12 @@ The key business questions were answered by writing some structured query langua
 
       ![10 to join](https://github.com/user-attachments/assets/39d0f54a-9ced-45cc-98b8-7dba0ceb4dcd)
 
-  After the two tables were left-joined using order_id as the primary key, view of the new combined table was created and a query was written to get the customer who returned items the most.
+  After the two tables were left-joined using order_id as the primary key, view of the new combined table was created as shown below:
+  
+  ![create view](https://github.com/user-attachments/assets/5ab69e2e-9b2b-4b23-961d-fe0fc36d1250)
+
+  
+  A query was written to get the customer who returned items the most.
 
    ![10 to ansa](https://github.com/user-attachments/assets/c3304f85-54e1-4fb2-acff-932e49a31459)
 
