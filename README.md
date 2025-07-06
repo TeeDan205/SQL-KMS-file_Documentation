@@ -40,7 +40,7 @@ In the initial phase of the data cleaning and preparation, the following actions
    - 🛠️ **SQL schema and Setup:** A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schema dbO (Database Owner) was used [dbo].[KMS] was used.
 
 
-### 💹 SQL Analysis
+### 💹 SQL Analysis and Results
 
 The key business questions were answered by writing some structured query language
 
@@ -79,8 +79,14 @@ The key business questions were answered by writing some structured query langua
      **The Top/Bottom 3 Regions** in terms of sales are shown in the queries results shown above.
    
    - The sales was sum up by region, then ordered *appropriately* to select the top 3 and bottom 3.
-   
-4. What were the total sales of appliances in Ontario? 
+
+     **Key Insight:** The Top (West) has sales of approximately **$3.6 million**, while the bottom region (Nunavut) has only **$116,376.47**. This indicates a massive gap of about 30 times between the highest and lowest performing regions. The top 3 regions (West, Ontario, Prarie) are the powerhouses of sales a **95% of total sales**, contributing significantly to the company's revenue. The total sales from the top 3 regions (**$9,498,066.61) are substantially higher than the bottom 3 regions (**$1,893,091.21) a **5% of total sales**, this indicates that the business is highly dependent on the top regions for revenue. In summary, the analysis reveals a stark contrast in sales performance across regions. The company should leverage the strong performance in top regions while developing targeted strategies to grow in the underperforming regions.
+
+     **Recommendation & Conclusion**
+   1. The Top Regions should continue to nurture these markets with excellent service, product availability and trgeted promotions to maintain and grow market share. Conduct market reseach to understand the unique challenges and opportunities of the bottom 3 regions.
+
+
+3. What were the total sales of appliances in Ontario? 
 
     **The Total Sales of Appliances in Ontario is found by writing the query below:**
 
@@ -94,7 +100,7 @@ The key business questions were answered by writing some structured query langua
 
    - Filter by product_category = 'Appliances' and province = 'Ontario' then sum sales.
 
-5. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
+4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
 
    **Revenue Growth for Bottom 10 Customers** query was written as shown below:
 
@@ -118,7 +124,7 @@ The key business questions were answered by writing some structured query langua
 
    - The bottom 10 customers by total sales was identified, the advice above were given based on the output of the query.
      
-6. KMS incurred the most shipping cost using which shipping method?
+5. KMS incurred the most shipping cost using which shipping method?
 
     **The Hishest Shipping Cost Method** is found by using the SQL:
 
