@@ -49,7 +49,7 @@ The key business questions were answered by writing some structured query langua
    
    - The sales by product_category was sum up, ordered and the top one was picked.
 
-   **Query Result**
+   **Query Result:**
 
    ![1 ansa REAL](https://github.com/user-attachments/assets/e8297778-060a-488f-baa4-f74c21dc4e01)
 
@@ -61,30 +61,49 @@ The key business questions were answered by writing some structured query langua
 
     ![2qry](https://github.com/user-attachments/assets/6ad326f9-bc17-47cd-bdde-e4b07b49e146)
 
-    **Query Result**
+    **Query Result:**
 
     ![2a Ansa](https://github.com/user-attachments/assets/8cfe621f-4dc0-4c48-aaa4-bbd9fb1c06da)
 
-      **The Top 3 Regions** were obtained by writing the query as shown below:
+      **The Bottom 3 Regions** were obtained by writing the query as shown below:
 
     ![2b qry](https://github.com/user-attachments/assets/a5739c21-c4c5-4f76-a971-926f4a0291c6)
 
-    **Query Result**
+    **Query Result:**
    
     ![2b ansa](https://github.com/user-attachments/assets/48c86a70-cfc9-4962-a969-0410c8ab5b21)
 
-   - The sales was sum up by region, then ordered to select the top 3 and bottom 3 as shown in the query written below:
+   - The sales was sum up by region, then ordered to select the top 3 and bottom 3.
    
+3. What were the total sales of appliances in Ontario? 
+    **The Total Sales of Appliances in Ontario is found by writing the query below:**
 
+    ![3 qry](https://github.com/user-attachments/assets/a13314ef-550e-4bcf-8e83-0343d1036d38)
 
-4. What were the total sales of appliances in Ontario? 
+    **Query Result:**
+     The Appliances Sales in Ontario is **$202,346.84**
+
    - Filter by product_category = 'Appliances' and province = 'Ontario' then sum sales.
 
+4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
+   **Revenue Growth for Bottom 10 Customers** query was written as shown below:
 
-5. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers. 
+    ![4](https://github.com/user-attachments/assets/894f0c4b-5394-4482-8a69-df2464ae7df6)
+
+    **Query Result**
+
+    ![4ansa](https://github.com/user-attachments/assets/d7d40274-f465-4878-98ec-dbe4914ac3dd)
+
+     Having identified the bottom 10 customers in terms of sales, region and  their prefrences;
+     (i) Create a branch closer to Alberta Province and those far away region from the Kuga Mega Store location.
+     (ii) Reduce discounts for chronic low-margin customers
+     (iii) Increase the shipping cost for low order quantities 
+     (iv) Enforce shipping minimums or add surcharges for small orders.
+     (v) Understand the reason for returning some orders and tackle it immediately.
+
    - The bottom 10 customers by total sales was identified, the advice were given based on the output of the query.
      
-6. KMS incurred the most shipping cost using which shipping method?
+5. KMS incurred the most shipping cost using which shipping method?
    - The shipping_cost was sum up by ship_mode and the top 1 was filtered.
 
 **Case Scenario II:**
