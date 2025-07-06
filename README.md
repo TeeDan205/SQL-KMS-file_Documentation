@@ -213,7 +213,3 @@ The key business questions were answered by writing some structured query langua
   
   5. For high priority orders, use faster shipping mode (Express air) and for low priority orders, use cheaper shipping mode (Delivery truck)
   
-
-
-## 🗝️ Key Performance Indicator (KPIs)
-   - Total Number 
