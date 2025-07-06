@@ -114,11 +114,23 @@ The key business questions were answered by writing some structured query langua
    - The bottom 10 customers by total sales was identified, the advice above were given based on the output of the query.
      
 5. KMS incurred the most shipping cost using which shipping method?
+
+    **The Hishest Shipping Cost Method** is found by using the SQL:
+
+      ![5qry](https://github.com/user-attachments/assets/9364bbf4-8c0d-4b44-9dea-2f1d27dc5bff)
+
+    **Query Result**
+
+      ![5nsa](https://github.com/user-attachments/assets/8188903f-fb8c-4af7-8dd5-f293c1eeb659)
+
+ **The Hishest Shipping Cost Method** is Delivery Truck with a total shipping cost of **$51971.94**
    - The shipping_cost was sum up by ship_mode and the top 1 was filtered.
 
 **Case Scenario II:**
 
 6. Who are the most valuable customers, and what products or services do they typically purchase? 
+
+
    - Most Valuable customers was defined by the total profit and the common product_categories they bought were also listed.
 
 7. Which small business customer had the highest sales? 
