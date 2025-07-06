@@ -73,7 +73,7 @@ The key business questions were answered by writing some structured query langua
    
     ![2b ansa](https://github.com/user-attachments/assets/48c86a70-cfc9-4962-a969-0410c8ab5b21)
 
-     **The Top/Bottom 3 Regions** in terms of sales re shown in the queries results shown above.
+     **The Top/Bottom 3 Regions** in terms of sales are shown in the queries results shown above.
    
    - The sales was sum up by region, then ordered *appropriately* to select the top 3 and bottom 3.
    
@@ -125,7 +125,7 @@ The key business questions were answered by writing some structured query langua
 
       ![5nsa](https://github.com/user-attachments/assets/8188903f-fb8c-4af7-8dd5-f293c1eeb659)
 
- **The Hishest Shipping Cost Method** is Delivery Truck with a total shipping cost of **$51971.94**
+ **The Hishest Shipping Cost Method** is **Delivery Truck** with a total shipping cost of **$51971.94**
    - The shipping_cost was sum up by ship_mode and the top 1 was filtered.
 
 **Case Scenario II:**
@@ -144,26 +144,53 @@ The key business questions were answered by writing some structured query langua
    - Most Valuable customers was defined by the total profit and the common product_categories they bought were also listed.
 
 7. Which small business customer had the highest sales? 
-   - The Customer_segment was filtered as = 'small Business', then sum sales by customer_name and ordered by sales in descending order to get the top customer.
+   - The Customer_segment was filtered as = 'small Business', then sum sales by customer_name and ordered by sales in descending order to get the top customer. The query is written as shown below:
 
-Dennis Kane
-Small Business
-33367.85
+   ![7qury](https://github.com/user-attachments/assets/90d76144-94e1-4b00-ac24-5ca4b0a3f403)
+
+  **Query Result**
+  
+  **Top small Business Customer** is **Dennis Kane** with the highest sales of **$33367.85**
 
 8. Which Corporate Customer placed the most number of orders in 2009 – 2012? 
-   - The order_id was counted distinctly by customer_name for customer_segment = 'corporate' and the top 1 was gotten.
+   - The order_id was counted distinctly by customer_name for customer_segment = 'corporate' and the top 1 was gotten. The query is written as shown below:
 
+    ![8query](https://github.com/user-attachments/assets/833fca68-8a02-47c1-b02f-9e4d859b5acc)
+
+  **Query Result**
+  
+  **Corporate Order Leader** is **Barry Weirich** with the highest number of orders in 2009 – 2012. he ordered  **50**
 
 9. Which consumer customer was the most profitable one? 
-   - The Customer_segment was filtered as = 'Consumer', then sum sales by customer_name and ordered by sales in descending order to get the top customer.
+   - The Customer_segment was filtered as = 'Consumer', then sum sales by customer_name and ordered by sales in descending order to get the top customer. The query is written as shown below:
 
+    ![9query](https://github.com/user-attachments/assets/6a63aa25-c771-4388-818f-df08eb975cbf)
+
+  **Query Result**
+  
+  **Most Profitable Consumer** is **Emily Phan** with a profit of **$27220.69**
 
 10. Which customer returned items, and what segment do they belong to? 
-    - full outer join order_status (where returned status = 'Returned') with orders to get the customer_name and their segment.
+    - full outer join order_status (where returned status = 'Returned') with orders to get the customer_name and their segment s shown in the query written below:
 
+    ![10 to join](https://github.com/user-attachments/assets/39d0f54a-9ced-45cc-98b8-7dba0ceb4dcd)
+ After the two tables were left-joined using order_id as the primary key, view of the new combined table was created and a query was written to get the customer who returned items the most.
+
+    ![10 to ansa](https://github.com/user-attachments/assets/c3304f85-54e1-4fb2-acff-932e49a31459)
+
+ **Query Result**
+  
+  **Returning Customers & Segments** is **Patrick Jones** in the **Home Office** Customer Segemnt with  total **30** returned items.
 
 11. If the delivery truck is the most economical but the slowest shipping method and  Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer
 
+**The shipping Cost Efficiency** is obtained by using the query below:
+
+   ![11qry](https://github.com/user-attachments/assets/2f184629-7d81-4fbc-9bbe-7651846ef143)
+
+ **Query Result**
+ 
+The company appropriately spent shipping costs based on the order priority because majority of the ship mode matched the order priority. Delivery truck was used for low and medium order priority products while the Express Air ship mode was used for high and critical order priority.
 
 
 ### 🔑 Key Findings & Insights:
