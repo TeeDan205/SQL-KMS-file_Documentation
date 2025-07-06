@@ -14,7 +14,7 @@ This Data analysis project aims to analyze the Kultra Mega Stores order data fro
 
 - **Source**: The data was provided by the incubator hub for the purpose of the hackathon and final Examinations of my data analysis program by the organization. The dataset contains two .csv files information scraped from 2009 to 2012, including:
   
-   - **KMS orders Table:** Containes 8,400 records of orders with 21 ttributes including 
+   - **KMS orders Table:** Contains 8,400 records of orders with 21 attributes including 
      - Order details: Order_ID, Order dates, price and quantities 
      - Customer information: Names, Province, segment and Region
      - Product details: category, sub-category, name, container, base margin, etc.
@@ -26,18 +26,18 @@ This Data analysis project aims to analyze the Kultra Mega Stores order data fro
  
    1. Microsoft Structured Query Language (SQL) Server Management Studio (For database management and query execution)
       
-   2. Github Markdown for documentation in the repository.
+   2. GitHub Markdown for documentation in the repository.
 
 ### 🧑‍🔬 Methodology 
 
 In the initial phase of the data cleaning and preparation, the following actions were performed;
    - ⏳ **Data Acquisition and inspection:** The data was loaded and the total number of records and fields were confirmed to be the same from the source.
      
-   - 🔃 **Data Import:** The two .csv data were imported by right-click on the database, then  task and navigate to import flat file.
+   - 🔃 **Data Import:** The two .csv data were imported by right-click on the database, then task and navigate to import flat file.
      
    - 🧹 **Data Type formatting:** The data Type for each of the 21 attributes were ensured they are the correct data type. The order_id was changed to VarChar and made the primary key, order_date in DATE format, sales, shipping_cost, discount, unit_price and profit in decimal (10,2) data Type. The order_id consistency between datasets was also ensured.
      
-   - 🛠️ **SQL schema and Setup:** A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schema dbO (Database Owner) was used [dbo].[KMS] was used.
+   - 🛠️ **SQL schema and Setup:** A schema; a logical container that organizes database objects (tables, views, etc.) was setup. The default schema dbo (Database Owner) was used [dbo].[KMS] was used.
 
 
 ### 💹 SQL Analysis and Insights
@@ -50,7 +50,7 @@ The key business questions were answered by writing some structured query langua
      
    ![1qry REAL](https://github.com/user-attachments/assets/6494816d-fa85-4303-9248-3ebb71cd86ed)
    
-   - The sales by product_category was sum up, ordered and the top one was picked.
+   - The sales by product_category were sum up, ordered and the top one was picked.
 
    **Query Result:**
 
@@ -106,7 +106,7 @@ The key business questions were answered by writing some structured query langua
 
     ![4ansa](https://github.com/user-attachments/assets/d7d40274-f465-4878-98ec-dbe4914ac3dd)
 
-     Having identified the bottom 10 customers in terms of sales, region and  their prefrences;
+     Having identified the bottom 10 customers in terms of sales, region and  their preferences;
 
    (i) Create a branch closer to Alberta Province and those far away region from the Kuga Mega Store location.
 
@@ -118,11 +118,13 @@ The key business questions were answered by writing some structured query langua
 
    (v) Understand the reason for returning some orders and tackle it immediately.
 
-   - The bottom 10 customers by total sales was identified, the advice above were given based on the output of the query.
-     
-5. KMS incurred the most shipping cost using which shipping method?
+   (vi) Offer personalized discounts to these customers.
 
-    **The Hishest Shipping Cost Method** is found by using the SQL:
+   - The bottom 10 customers by total sales were identified, the advice above were given based on the output of the query.
+     
+6. KMS incurred the most shipping cost using which shipping method?
+
+    **The Highest Shipping Cost Method** is found by using the SQL:
 
       ![5qry](https://github.com/user-attachments/assets/9364bbf4-8c0d-4b44-9dea-2f1d27dc5bff)
 
@@ -130,7 +132,7 @@ The key business questions were answered by writing some structured query langua
 
       ![5nsa](https://github.com/user-attachments/assets/8188903f-fb8c-4af7-8dd5-f293c1eeb659)
 
- **The Hishest Shipping Cost Method** is **Delivery Truck** with a total shipping cost of **$51971.94**
+ **The Highest Shipping Cost Method** is **Delivery Truck** with a total shipping cost of **$51971.94**
    - The shipping_cost was sum up by ship_mode and the top 1 was filtered.
 
 **Case Scenario II:**
@@ -201,9 +203,16 @@ The key business questions were answered by writing some structured query langua
 
 ### 💡 Strategic Recommendations and Conclusion
 
-  1. The Top Regions should continue to nurture these markets with excellent service, product availability and targeted promotions to maintain and grow market share. Conduct market reseach to understand the unique challenges and opportunities of the bottom 3 regions.
-  2. Technology products generated more revenue than other product category indicated strong market demand for electronics.
-
+  1. The Top Regions should continue to nurture these markets with excellent service, product availability and targeted promotions to maintain and grow market share. Conduct market research to understand the unique challenges and opportunities of the bottom 3 regions.
+  
+  2. Leverage on Top Products. Since Technology products generated more revenue than other product category indicated strong market demand for electronics, consider deeper analysis on what drives their reviews to replicate success in other categories.
+  
+  3. Understand the reason for returning some orders and tackle it immediately.
+  
+  4. Optimize shipping cost by 15% to improve regional sales distribution.
+  
+  5. For high priority orders, use faster shipping mode (Express air) and for low priority orders, use cheaper shipping mode (Delivery truck)
+  
 
 
 ## 🗝️ Key Performance Indicator (KPIs)
