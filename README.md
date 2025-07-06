@@ -18,7 +18,7 @@ This Data analysis project aims to analyze the Kultra Mega Stores order data fro
      - Customer information: Names, Province, segment and Region
      - Product details: category, sub-category, name, container, base margin, etc.
      - Financial metrics.
-   - **Order_Status Table:** Contains 573 records of returned orders. Each record has an order_id nd the status 'returned'. Orders not present in this table are considered not returned. 
+   - **Order_Status Table:** Contains 573 records of returned orders. Each record has an order_id and the status 'returned'. Orders not present in this table are considered not returned. 
 
  ### 🧰 Tools Used
  
@@ -34,7 +34,7 @@ In the initial phase of the data cleaning and preparation, the following actions
      
    - 🧹 **Data Type formatting:** The data Type for each of the 21 attributes were ensured they are the correct data type. The order_id was changed to VarChar and made the primary key, order_date in DATE format, sales, shipping_cost, discount, unit_price and profit in decimal (10,2) data Type. The order_id consistency between datasets was also ensured.
      
-   - 🛠️ **SQL schema and Setup:** A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schrms dbO (Database Owner) was used [dbo].[KMS] was used.
+   - 🛠️ **SQL schema and Setup:** A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schema dbO (Database Owner) was used [dbo].[KMS] was used.
 
 
 ### 💹 SQL Analysis
@@ -57,7 +57,7 @@ The key business questions were answered by writing some structured query langua
    Technology products generated 42% more revenue than secon-place Furniture ($1.3M), indicating strong market demand for electronics.
    
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
-     **The Top 3 Regions** were obtained by writing the query as shown below:
+     **The Top 3 Regions** were obtained by writing the query (ranked in descending order) as shown below:
 
     ![2qry](https://github.com/user-attachments/assets/6ad326f9-bc17-47cd-bdde-e4b07b49e146)
 
@@ -65,7 +65,7 @@ The key business questions were answered by writing some structured query langua
 
     ![2a Ansa](https://github.com/user-attachments/assets/8cfe621f-4dc0-4c48-aaa4-bbd9fb1c06da)
 
-      **The Bottom 3 Regions** were obtained by writing the query as shown below:
+      **The Bottom 3 Regions** were obtained by writing the query (ranked in ascending order) as shown below:
 
     ![2b qry](https://github.com/user-attachments/assets/a5739c21-c4c5-4f76-a971-926f4a0291c6)
 
@@ -73,7 +73,7 @@ The key business questions were answered by writing some structured query langua
    
     ![2b ansa](https://github.com/user-attachments/assets/48c86a70-cfc9-4962-a969-0410c8ab5b21)
 
-   - The sales was sum up by region, then ordered to select the top 3 and bottom 3.
+   - The sales was sum up by region, then ordered *appropriately* to select the top 3 and bottom 3.
    
 3. What were the total sales of appliances in Ontario? 
     **The Total Sales of Appliances in Ontario is found by writing the query below:**
@@ -81,6 +81,9 @@ The key business questions were answered by writing some structured query langua
     ![3 qry](https://github.com/user-attachments/assets/a13314ef-550e-4bcf-8e83-0343d1036d38)
 
     **Query Result:**
+
+     ![3](https://github.com/user-attachments/assets/534926b6-15b3-406c-8348-bcf9db772d1b)
+
      The Appliances Sales in Ontario is **$202,346.84**
 
    - Filter by product_category = 'Appliances' and province = 'Ontario' then sum sales.
@@ -95,15 +98,16 @@ The key business questions were answered by writing some structured query langua
     ![4ansa](https://github.com/user-attachments/assets/d7d40274-f465-4878-98ec-dbe4914ac3dd)
 
      Having identified the bottom 10 customers in terms of sales, region and  their prefrences;
-     (i) Create a branch closer to Alberta Province and those far away region from the Kuga Mega Store location.
-     (ii) Reduce discounts for chronic low-margin customers
-     (iii) Increase the shipping cost for low order quantities 
-     (iv) Enforce shipping minimums or add surcharges for small orders.
-     (v) Understand the reason for returning some orders and tackle it immediately.
 
-   - The bottom 10 customers by total sales was identified, the advice were given based on the output of the query.
+   (i) Create a branch closer to Alberta Province and those far away region from the Kuga Mega Store location.
+   (ii) Reduce discounts for chronic low-margin customers
+   (iii) Increase the shipping cost for low order quantities
+   (iv) Enforce shipping minimums or add surcharges for small orders.
+   (v) Understand the reason for returning some orders and tackle it immediately.
+
+   - The bottom 10 customers by total sales was identified, the advice above were given based on the output of the query.
      
-5. KMS incurred the most shipping cost using which shipping method?
+6. KMS incurred the most shipping cost using which shipping method?
    - The shipping_cost was sum up by ship_mode and the top 1 was filtered.
 
 **Case Scenario II:**
