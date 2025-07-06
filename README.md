@@ -40,7 +40,7 @@ In the initial phase of the data cleaning and preparation, the following actions
    - 🛠️ **SQL schema and Setup:** A schema; a logical container that organizes database objects (tables, views, etc) was setup. The default schema dbO (Database Owner) was used [dbo].[KMS] was used.
 
 
-### 💹 SQL Analysis and Results
+### 💹 SQL Analysis and Insights
 
 The key business questions were answered by writing some structured query language
 
@@ -81,11 +81,7 @@ The key business questions were answered by writing some structured query langua
    - The sales was sum up by region, then ordered *appropriately* to select the top 3 and bottom 3.
 
      **Key Insight:** The Top (West) has sales of approximately **$3.6 million**, while the bottom region (Nunavut) has only **$116,376.47**. This indicates a massive gap of about 30 times between the highest and lowest performing regions. The top 3 regions (West, Ontario, Prarie) are the powerhouses of sales a **95% of total sales**, contributing significantly to the company's revenue. The total sales from the top 3 regions (**$9,498,066.61) are substantially higher than the bottom 3 regions (**$1,893,091.21) a **5% of total sales**, this indicates that the business is highly dependent on the top regions for revenue. In summary, the analysis reveals a stark contrast in sales performance across regions. The company should leverage the strong performance in top regions while developing targeted strategies to grow in the underperforming regions.
-
-     **Recommendation & Conclusion**
-   1. The Top Regions should continue to nurture these markets with excellent service, product availability and trgeted promotions to maintain and grow market share. Conduct market reseach to understand the unique challenges and opportunities of the bottom 3 regions.
-
-
+     
 3. What were the total sales of appliances in Ontario? 
 
     **The Total Sales of Appliances in Ontario is found by writing the query below:**
@@ -203,12 +199,10 @@ The key business questions were answered by writing some structured query langua
      The company appropriately spent shipping costs based on the order priority because majority of the ship mode matched the order priority. Delivery truck was used for low and medium order priority products while the Express Air ship mode was used for high and critical order priority.
 
 
-### 🔑 Key Findings & Insights:
-
-
-
 ### 💡 Strategic Recommendations and Conclusion
-   1. Cap Discountst 40% for 
+
+  1. The Top Regions should continue to nurture these markets with excellent service, product availability and trgeted promotions to maintain and grow market share. Conduct market reseach to understand the unique challenges and opportunities of the bottom 3 regions.
+
 
 
 ## 🗝️ Key Performance Indicator (KPIs)
